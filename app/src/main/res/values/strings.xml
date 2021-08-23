@@ -22,4 +22,5 @@
     <string name="rotulo_simbolo_cruz">Cruces</string>
     <string name="rotulo_simbolo_circulo">Círculos</string>
     <string name="titulo_juega_con_estatico">Jugador 1 juega con:</string>
+    <string name="area_de_mensajes">Área de mensajes</string>
 </resources>
