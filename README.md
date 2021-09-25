@@ -1,2 +1,2 @@
-# TPO_AD_FRONT
-Trabajo Práctico Aplicaciones Distribuidas
+# TPO_AD_APP
+App Trabajo Práctico Aplicaciones Distribuidas
