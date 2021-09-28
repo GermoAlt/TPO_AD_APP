@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">GestionBarrial</string>
+    <string name="landing_comenzar">COMENZAR</string>
+    <string name="landing_welcome">Bienvenido a SGB</string>
+    <string name="boton_promociones_y_servicios">VER PROMOCIONES Y SERVICIOS DE VECINOS</string>
+    <string name="landing_page_image_description">landing page image</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
