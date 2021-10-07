@@ -18,4 +18,7 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
+    <style name="Theme.GestionBarrial.AppBarOverlay"
+        parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.GestionBarrial.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

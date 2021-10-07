@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import com.ad.grupo10.gestionbarrial.R
-import com.ad.grupo10.gestionbarrial.landing.onboarding.OnboardingActivity
+import com.ad.grupo10.gestionbarrial.onboarding.OnboardingActivity
 
 class LandingActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

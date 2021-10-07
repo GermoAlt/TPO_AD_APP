@@ -1,4 +1,4 @@
-package com.ad.grupo10.gestionbarrial.landing.onboarding
+package com.ad.grupo10.gestionbarrial.onboarding
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

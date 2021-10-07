@@ -11,10 +11,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GestionBarrial">
         <activity
-            android:name="com.ad.grupo10.gestionbarrial.landing.onboarding.OnboardingActivity"
+            android:name=".promos.PromocionesServiciosActivity"
             android:exported="true" />
         <activity
-            android:name="com.ad.grupo10.gestionbarrial.landing.LandingActivity"
+            android:name=".login.RegisterActivity"
+            android:exported="true"
+            android:label="@string/title_activity_register"
+            android:theme="@style/Theme.GestionBarrial.NoActionBar" />
+        <activity
+            android:name=".login.LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".onboarding.OnboardingActivity"
+            android:exported="true" />
+        <activity
+            android:name=".landing.LandingActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
