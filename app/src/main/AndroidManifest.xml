@@ -11,6 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GestionBarrial">
         <activity
+            android:name=".denuncias.MisDenunciasActivity"
+            android:exported="false" />
+        <activity
             android:name=".promos.PromocionesServiciosActivity"
             android:exported="true" />
         <activity

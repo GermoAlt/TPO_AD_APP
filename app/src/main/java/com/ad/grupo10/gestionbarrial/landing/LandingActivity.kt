@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import com.ad.grupo10.gestionbarrial.R
+import com.ad.grupo10.gestionbarrial.login.LoginActivity
 import com.ad.grupo10.gestionbarrial.onboarding.OnboardingActivity
 
 class LandingActivity : AppCompatActivity() {
@@ -15,7 +16,7 @@ class LandingActivity : AppCompatActivity() {
         setContentView(R.layout.activity_landing)
 
         val botonComenzar = findViewById<Button>(R.id.button_comenzar)
-        val intentComenzar = Intent(this, OnboardingActivity::class.java)
+        val intentComenzar = Intent(this, LoginActivity::class.java)
         botonComenzar.setOnClickListener{
             startActivity(intentComenzar)
         }
