@@ -4,26 +4,39 @@
     <string name="landing_welcome">Bienvenido a SGB</string>
     <string name="boton_promociones_y_servicios">VER PROMOCIONES Y SERVICIOS DE VECINOS</string>
     <string name="landing_page_image_description">landing page image</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="title_activity_login">LoginActivity</string>
-    <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password</string>
-    <string name="action_sign_in">Sign in or register</string>
-    <string name="action_sign_in_short">Sign in</string>
-    <string name="welcome">"Welcome !"</string>
-    <string name="invalid_username">Not a valid username</string>
-    <string name="invalid_password">Password must be >5 characters</string>
-    <string name="login_failed">"Login failed"</string>
-    <string name="title_activity_register">RegisterActivity</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="title_activity_promociones_servicios">PromocionesServiciosActivity</string>
+    <string name="ingresar">INGRESAR</string>
+    <string name="registrarse">REGISTRARSE</string>
+    <string name="soy_inspector">SOY INSPECTOR</string>
+    <string name="e_mail">E-mail</string>
+    <string name="contrase_a">Contraseña</string>
+    <string name="hola_vecino">Hola vecino!</string>
+    <string name="registrarse_title">Registrarse</string>
+    <string name="enviar_solicitud">ENVIAR SOLICITUD</string>
+    <string name="dni">DNI</string>
+    <string name="apellido">Apellido</string>
+    <string name="direcci_n">Dirección</string>
+    <string name="correo_electronico">Correo electrónico</string>
+    <string name="nombre">Nombre</string>
+    <string name="mensaje_registro">Luego de enviada la solicitud, la información va a ser verificada y será notificado por mail el resultado para poder ingresar a la apliciación</string>
+    <string name="mensaje_olvide_login">Olvidé mi contraseña</string>
+    <string name="hola_inspector">Hola inspector!</string>
+    <string name="soy_vecino">SOY VECINO</string>
+    <string name="legajo">Legajo</string>
+    <string name="bienvenido">Bienvenido!</string>
+    <string name="mis_reclamos">MIS RECLAMOS</string>
+    <string name="reclamos_del_municipio">RECLAMOS DEL MUNICIPIO</string>
+    <string name="crear_nuevo_reclamo">CREAR NUEVO RECLAMO</string>
+    <string name="mis_denuncias">MIS DENUNCIAS</string>
+    <string name="crear_nueva_denuncia">CREAR NUEVA DENUNCIA</string>
+    <string name="denuncias_recibidas">DENUNCIAS RECIBIDAS</string>
+    <string name="crear_nueva_promocion_o_servicio">CREAR NUEVA PROMOCION O SERVICIO</string>
+    <string name="mis_promociones_y_servicios">MIS PROMOCIONES Y SERVICIOS</string>
+    <string name="promociones_y_servicios_de_vecinos">PROMOCIONES Y SERVICIOS DE VECINOS</string>
     <string name="buscar">Buscar</string>
+    <string name="icon">Icon</string>
+    <string name="titulo_denuncia_card">DENUNCIA #</string>
 </resources>

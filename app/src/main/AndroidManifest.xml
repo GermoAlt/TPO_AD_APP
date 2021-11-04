@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.ad.grupo10.gestionbarrial">
-
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:allowBackup="true"
         android:fullBackupContent="true"
@@ -11,24 +13,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GestionBarrial">
         <activity
-            android:name=".denuncias.MisDenunciasActivity"
+            android:name=".activities.denuncias.denuncia.DetalleDenunciaActivity"
             android:exported="false" />
         <activity
-            android:name=".promos.PromocionesServiciosActivity"
-            android:exported="true" />
+            android:name=".activities.denuncias.denunciasRecibidas.DenunciasRecibidasActivity"
+            android:exported="false" />
         <activity
-            android:name=".login.RegisterActivity"
-            android:exported="true"
-            android:label="@string/title_activity_register"
-            android:theme="@style/Theme.GestionBarrial.NoActionBar" />
+            android:name=".activities.denuncias.crearNuevaDenuncia.CrearNuevaDenunciaActivity"
+            android:exported="false" />
         <activity
-            android:name=".login.LoginActivity"
-            android:exported="true" />
-        <activity
-            android:name=".onboarding.OnboardingActivity"
-            android:exported="true" />
-        <activity
-            android:name=".landing.LandingActivity"
+            android:name=".activities.landing.LandingActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -36,6 +30,24 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".activities.login.LoginInspectorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.menu.MenuVecinoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.promos.PromocionesServiciosActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.login.RegisterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.login.LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.onboarding.OnboardingActivity"
+            android:exported="true" />
     </application>
 
 </manifest>
