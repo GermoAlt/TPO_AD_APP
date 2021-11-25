@@ -43,7 +43,6 @@
     <string name="vecinos">Vecinos</string>
     <string name="notificaciones">Notificaciones</string>
     <string name="mi_perfil">Mi perfil</string>
-<!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="nuevo_reclamo">Nuevo reclamo</string>
     <string name="establecer_ubicacion">Establecer ubicación</string>
@@ -60,4 +59,31 @@
     <string name="tipo_usuario">Tipo de usuario</string>
     <string name="ultima_modificacion">Ultima modificación:</string>
     <string name="estado">Estado:</string>
+    <string name="nuevo_servicio">Nuevo servicio</string>
+    <string name="aceptar">ACEPTAR</string>
+    <string-array name="categorias_promos">
+        <item>Desayunos</item>
+        <item>Menú del día</item>
+        <item>Panadería</item>
+        <item>Pizzas</item>
+        <item>Postres</item>
+        <item>Venta</item>
+        <item>Albañilería</item>
+        <item>Electricidad</item>
+        <item>Cerrajería</item>
+        <item>Pintura</item>
+        <item>Gasfitería</item>
+        <item>Comidas</item>
+        <item>A/A</item>
+        <item>Arquitecto</item>
+        <item>Autos</item>
+        <item>Belleza</item>
+        <item>Bienestar</item>
+        <item>Carpintería</item>
+        <item>Colocador</item>
+        <item>Control de plagas</item>
+        <item>Colocador</item>
+        <item>Control de plagas</item>
+        <item>Cuidadores</item>
+    </string-array>
 </resources>

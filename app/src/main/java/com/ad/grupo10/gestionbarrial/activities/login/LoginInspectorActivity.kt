@@ -5,6 +5,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
 import com.ad.grupo10.gestionbarrial.R
 import com.ad.grupo10.gestionbarrial.activities.menu.MenuActivity
 import com.ad.grupo10.gestionbarrial.enums.TIPO_USUARIO
@@ -32,9 +33,12 @@ class LoginInspectorActivity : AppCompatActivity() {
     }
 
     private fun login(): Usuario? {
+        val usuario: String = findViewById<EditText>(R.id.editTextTextPersonName7).text.toString()
+        val password: String = findViewById<EditText>(R.id.editTextTextPassword2).text.toString()
+
         getSharedPreferences(getString(R.string.file_prefs), Context.MODE_PRIVATE).edit()
             .putString(getString(R.string.tipo_usuario), TIPO_USUARIO.INSPECTOR.toString()).apply()
 
-        return Usuario()
+        return Usuario(usuario, password)
     }
 }

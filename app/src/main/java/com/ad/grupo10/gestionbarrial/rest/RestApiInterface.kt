@@ -7,7 +7,7 @@ import com.ad.grupo10.gestionbarrial.model.Usuario
 import retrofit2.Call
 import retrofit2.http.*
 
-interface RestService {
+interface RestApiInterface {
 
     /*LOGIN-----------------------------*/
     @POST("login")

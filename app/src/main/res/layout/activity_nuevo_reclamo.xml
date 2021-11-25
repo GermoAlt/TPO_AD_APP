@@ -26,7 +26,7 @@
         android:layout_height="1dp"
         android:layout_marginBottom="20dp"
         android:background="@android:color/darker_gray"
-        app:layout_constraintBottom_toTopOf="@+id/textView15"
+        app:layout_constraintBottom_toTopOf="@+id/nueva_denuncia_categoria"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
@@ -37,7 +37,7 @@
         android:layout_height="1dp"
         android:layout_marginBottom="20dp"
         android:background="@android:color/darker_gray"
-        app:layout_constraintBottom_toTopOf="@+id/textView16"
+        app:layout_constraintBottom_toTopOf="@+id/nueva_denuncia_agregar_fotos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
@@ -48,7 +48,7 @@
         android:layout_height="1dp"
         android:layout_marginBottom="16dp"
         android:background="@android:color/darker_gray"
-        app:layout_constraintBottom_toTopOf="@+id/textView17"
+        app:layout_constraintBottom_toTopOf="@+id/nueva_denuncia_descripcion"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
@@ -63,13 +63,13 @@
         android:text="@string/nuevo_reclamo"
         android:textColor="#000000"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView14"
+        app:layout_constraintBottom_toTopOf="@+id/nueva_denuncia_ubicacion"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/nueva_denuncia_ubicacion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="148dp"
@@ -79,7 +79,7 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/textView15"
+        android:id="@+id/nueva_denuncia_categoria"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="142dp"
@@ -89,7 +89,7 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/textView16"
+        android:id="@+id/nueva_denuncia_agregar_fotos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
@@ -100,7 +100,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView17"
+        android:id="@+id/nueva_denuncia_descripcion"
         android:layout_width="282dp"
         android:layout_height="68dp"
         android:layout_marginEnd="24dp"
@@ -149,7 +149,7 @@
         android:layout_marginEnd="35dp"
         android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toTopOf="@+id/splitLine_hor5"
-        app:layout_constraintEnd_toStartOf="@+id/textView14"
+        app:layout_constraintEnd_toStartOf="@+id/nueva_denuncia_ubicacion"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/icon_ubicacion"
@@ -163,7 +163,7 @@
         android:layout_marginEnd="33dp"
         android:layout_marginBottom="13dp"
         app:layout_constraintBottom_toTopOf="@+id/splitLine_hor6"
-        app:layout_constraintEnd_toStartOf="@+id/textView15"
+        app:layout_constraintEnd_toStartOf="@+id/nueva_denuncia_categoria"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/icon_categoria" />
 
@@ -175,7 +175,7 @@
         android:layout_marginEnd="35dp"
         android:layout_marginBottom="24dp"
         app:layout_constraintBottom_toTopOf="@+id/splitLine_hor7"
-        app:layout_constraintEnd_toStartOf="@+id/textView16"
+        app:layout_constraintEnd_toStartOf="@+id/nueva_denuncia_agregar_fotos"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/icon_add_photo" />
@@ -188,7 +188,7 @@
         android:layout_marginEnd="37dp"
         android:layout_marginBottom="142dp"
         app:layout_constraintBottom_toTopOf="@+id/button3"
-        app:layout_constraintEnd_toStartOf="@+id/textView17"
+        app:layout_constraintEnd_toStartOf="@+id/nueva_denuncia_descripcion"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/icon_descripcion" />
