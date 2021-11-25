@@ -88,4 +88,16 @@
         <item>Control de plagas</item>
         <item>Cuidadores</item>
     </string-array>
+    <string-array name="categorias_reclamos_municipio">
+        <item>Alumbrado público</item>
+        <item>Arbolado, Higiene, Plazas y Paseos</item>
+        <item>Comedores Escolares</item>
+        <item>Camping Municipal</item>
+        <item>Obras Públicas</item>
+        <item>Obras particulares</item>
+        <item>Redes - vía pública</item>
+        <item>Salud Pública</item>
+        <item>Semáforos y señalamiento vial</item>
+        <item>Tránsito y calles</item>
+    </string-array>
 </resources>

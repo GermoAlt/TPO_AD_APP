@@ -1,3 +1,8 @@
 package com.ad.grupo10.gestionbarrial.activities.navigation
 
-class Navigation()
+import android.content.Context
+
+class Navigation(var context: Context){
+    init {
+    }
+}
