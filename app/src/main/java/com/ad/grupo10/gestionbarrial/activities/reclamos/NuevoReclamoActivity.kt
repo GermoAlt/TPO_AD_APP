@@ -17,6 +17,8 @@ class NuevoReclamoActivity : AppCompatActivity() {
         setContentView(R.layout.activity_nuevo_reclamo)
 
         findViewById<Button>(R.id.boton_cancelar).setOnClickListener { descartar() }
+        findViewById<Button>(R.id.boton_enviar).setOnClickListener { enviar() }
+        findViewById<Button>(R.id.boton_guardar).setOnClickListener { guardar() }
     }
 
     private fun descartar(){

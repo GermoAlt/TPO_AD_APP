@@ -6,6 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".activities.reclamos.MisReclamosActivity">
 
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_gravity="start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_navigation_menu" />
+
     <ImageButton
         android:id="@+id/boton_back4"
         android:layout_width="48dp"
