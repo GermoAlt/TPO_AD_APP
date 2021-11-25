@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.denuncias.CrearNuevaDenunciaActivity">
+    tools:context=".activities.reclamos.nuevo.NuevoReclamoActivity">
 
     <ImageButton
         android:id="@+id/boton_back2"
@@ -14,7 +14,7 @@
         android:layout_marginTop="45dp"
         android:layout_marginEnd="14dp"
         android:background="@null"
-        android:contentDescription="back button"
+        android:contentDescription="@string/back_button"
         app:layout_constraintEnd_toStartOf="@+id/textView6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -53,17 +53,6 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <View
-        android:id="@+id/splitLine_hor8"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginBottom="22dp"
-        android:background="@android:color/darker_gray"
-        app:layout_constraintBottom_toTopOf="@+id/textView18"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
@@ -71,7 +60,7 @@
         android:layout_marginTop="45dp"
         android:layout_marginEnd="128dp"
         android:layout_marginBottom="48dp"
-        android:text="Nueva denuncia"
+        android:text="@string/nuevo_reclamo"
         android:textColor="#000000"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/textView14"
@@ -85,7 +74,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="148dp"
         android:layout_marginBottom="28dp"
-        android:text="Establecer ubicación"
+        android:text="@string/establecer_ubicacion"
         app:layout_constraintBottom_toTopOf="@+id/splitLine_hor5"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -95,7 +84,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="142dp"
         android:layout_marginBottom="24dp"
-        android:text="Seleccionar categoría"
+        android:text="@string/seleccionar_categoria"
         app:layout_constraintBottom_toTopOf="@+id/splitLine_hor6"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -103,58 +92,54 @@
         android:id="@+id/textView16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="27dp"
-        android:text="Añadir fotos, videos o notas de voz"
+        android:layout_marginBottom="24dp"
+        android:text="@string/a_adir_fotos_max_7"
         app:layout_constraintBottom_toTopOf="@+id/splitLine_hor7"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.694"
+        app:layout_constraintHorizontal_bias="0.402"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView17"
         android:layout_width="282dp"
         android:layout_height="68dp"
-        android:layout_marginEnd="29dp"
-        android:layout_marginBottom="9dp"
-        android:text="Ingresar una descripción"
-        app:layout_constraintBottom_toTopOf="@+id/splitLine_hor8"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <TextView
-        android:id="@+id/textView18"
-        android:layout_width="278dp"
-        android:layout_height="47dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="48dp"
-        android:text="Indicar vecino o comercio a denunciar (opcional)"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="122dp"
+        android:text="@string/ingresar_una_descripcion"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="140dp"
-        android:layout_marginEnd="37dp"
-        android:layout_marginBottom="24dp"
-        android:text="ENVIAR"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/enviar"
         app:layout_constraintBottom_toTopOf="@+id/navigation"
-        app:layout_constraintEnd_toStartOf="@+id/boton_cancelar"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/guardar"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        app:layout_constraintStart_toEndOf="@+id/button3" />
 
     <Button
         android:id="@+id/boton_cancelar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
         android:layout_marginEnd="28dp"
-        android:layout_marginBottom="75dp"
-        android:text="CANCELAR"
+        android:layout_marginBottom="40dp"
+        android:text="@string/cancelar"
         app:layout_constraintBottom_toTopOf="@+id/navigation"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView18"
-        app:layout_constraintVertical_bias="0.281" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/button4" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -167,7 +152,8 @@
         app:layout_constraintEnd_toStartOf="@+id/textView14"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/icon_ubicacion" />
+        app:srcCompat="@drawable/icon_ubicacion"
+        android:contentDescription="@string/location_icon" />
 
     <ImageView
         android:id="@+id/imageView10"
@@ -200,34 +186,31 @@
         android:layout_height="34dp"
         android:layout_marginStart="36dp"
         android:layout_marginEnd="37dp"
-        android:layout_marginBottom="32dp"
-        app:layout_constraintBottom_toTopOf="@+id/splitLine_hor8"
+        android:layout_marginBottom="142dp"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
         app:layout_constraintEnd_toStartOf="@+id/textView17"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/icon_descripcion" />
-
-    <ImageView
-        android:id="@+id/imageView13"
-        android:layout_width="34dp"
-        android:layout_height="34dp"
-        android:layout_marginStart="38dp"
-        android:layout_marginEnd="36dp"
-        android:layout_marginBottom="132dp"
-        app:layout_constraintBottom_toTopOf="@+id/navigation"
-        app:layout_constraintEnd_toStartOf="@+id/textView18"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/icon_persona" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/navigation"
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:layout_gravity="start"
-        app:menu="@menu/bottom_navigation_menu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_navigation_menu" />
+
+    <FrameLayout
+        android:id="@+id/standard_bottom_sheet"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+        android:layout_height="100dp"
+        android:layout_width="match_parent">
+
+    <!-- Bottom sheet contents. -->
+
+    </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

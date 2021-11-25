@@ -4,20 +4,20 @@
         android:id="@+id/page_1"
         android:enabled="true"
         android:icon="@drawable/icon_inicio"
-        android:title="Inicio"/>
+        android:title="@string/inicio"/>
     <item
         android:id="@+id/page_2"
         android:enabled="true"
         android:icon="@drawable/icon_vecinos"
-        android:title="Vecinos"/>
+        android:title="@string/vecinos"/>
     <item
         android:id="@+id/nav_notifiaciones"
         android:enabled="true"
         android:icon="@drawable/icon_notificaciones"
-        android:title="Notificaciones"/>
+        android:title="@string/notificaciones"/>
     <item
         android:id="@+id/nav_perfil"
         android:enabled="true"
         android:icon="@drawable/icon_persona"
-        android:title="Mi perfil"/>
+        android:title="@string/mi_perfil"/>
 </menu>

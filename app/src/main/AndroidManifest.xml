@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.ad.grupo10.gestionbarrial">
+
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+
+
     <application
         android:allowBackup="true"
         android:fullBackupContent="true"
@@ -13,13 +18,37 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GestionBarrial">
         <activity
-            android:name=".activities.denuncias.denuncia.DetalleDenunciaActivity"
+            android:name=".activities.navigation.PerfilActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.denuncias.denunciasRecibidas.DenunciasRecibidasActivity"
+            android:name=".activities.navigation.NotificacionesActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.denuncias.crearNuevaDenuncia.CrearNuevaDenunciaActivity"
+            android:name=".activities.navigation.ListaVecinosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.reclamos.nuevo.NuevoReclamoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.reclamos.MisReclamosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.reclamos.ReclamosMunicipioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.promos.MisPromoServActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.promos.NuevaPromoServActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.denuncias.DetalleDenunciaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.denuncias.DenunciasRecibidasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.denuncias.CrearNuevaDenunciaActivity"
             android:exported="false" />
         <activity
             android:name=".activities.landing.LandingActivity"
@@ -34,10 +63,10 @@
             android:name=".activities.login.LoginInspectorActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.menu.MenuVecinoActivity"
+            android:name=".activities.menu.MenuActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.promos.PromocionesServiciosActivity"
+            android:name=".activities.promos.PromocionesServiciosVecinosActivity"
             android:exported="true" />
         <activity
             android:name=".activities.login.RegisterActivity"
@@ -48,6 +77,10 @@
         <activity
             android:name=".activities.onboarding.OnboardingActivity"
             android:exported="true" />
+        <activity android:name=".activities.denuncias.MisDenunciasActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustNothing"
+            />
     </application>
 
 </manifest>

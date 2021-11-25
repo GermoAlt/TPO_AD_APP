@@ -1,4 +1,4 @@
-package com.ad.grupo10.gestionbarrial.activities.denuncias.denunciasRecibidas;
+package com.ad.grupo10.gestionbarrial.activities.denuncias;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,11 +6,11 @@ import android.os.Bundle;
 
 import com.ad.grupo10.gestionbarrial.R;
 
-public class DenunciasRecibidasActivity extends AppCompatActivity {
+public class DetalleDenunciaActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_denuncias_recibidas);
+        setContentView(R.layout.activity_detalle_denuncia);
     }
 }

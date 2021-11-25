@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.menu.MenuVecinoActivity">
+    tools:context=".activities.menu.MenuActivity">
 
     <TextView
         android:id="@+id/textView5"
@@ -39,28 +39,28 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/button5"
+                android:id="@+id/boton_reclamos_municipio"
                 android:layout_width="match_parent"
                 android:layout_height="75dp"
                 android:text="@string/reclamos_del_municipio"
                 android:textStyle="bold" />
 
             <Button
-                android:id="@+id/button6"
+                android:id="@+id/boton_mis_reclamos"
                 android:layout_width="match_parent"
                 android:layout_height="75dp"
                 android:text="@string/mis_reclamos"
                 android:textStyle="bold" />
 
             <Button
-                android:id="@+id/button7"
+                android:id="@+id/boton_crear_nuevo_reclamo"
                 android:layout_width="match_parent"
                 android:layout_height="75dp"
                 android:text="@string/crear_nuevo_reclamo"
                 android:textStyle="bold" />
 
             <View
-                android:id="@+id/view"
+                android:id="@+id/separator"
                 android:layout_width="match_parent"
                 android:layout_height="25dp" />
 
@@ -91,21 +91,21 @@
                 android:layout_height="25dp" />
 
             <Button
-                android:id="@+id/button11"
+                android:id="@+id/boton_promo_serv_vecinos"
                 android:layout_width="match_parent"
                 android:layout_height="75dp"
                 android:text="@string/promociones_y_servicios_de_vecinos"
                 android:textStyle="bold" />
 
             <Button
-                android:id="@+id/button12"
+                android:id="@+id/boton_nueva_promo_serv"
                 android:layout_width="match_parent"
                 android:layout_height="75dp"
                 android:text="@string/crear_nueva_promocion_o_servicio"
                 android:textStyle="bold" />
 
             <Button
-                android:id="@+id/button13"
+                android:id="@+id/boton_mis_promos_serv"
                 android:layout_width="match_parent"
                 android:layout_height="75dp"
                 android:text="@string/mis_promociones_y_servicios"

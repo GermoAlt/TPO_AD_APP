@@ -1,4 +1,4 @@
-package com.ad.grupo10.gestionbarrial.activities.denuncias.crearNuevaDenuncia
+package com.ad.grupo10.gestionbarrial.activities.denuncias
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
