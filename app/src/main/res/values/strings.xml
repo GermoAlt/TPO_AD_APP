@@ -61,6 +61,8 @@
     <string name="estado">Estado:</string>
     <string name="nuevo_servicio">Nuevo servicio</string>
     <string name="aceptar">ACEPTAR</string>
+    <string name="cerrar_sesi_n">Cerrar sesión</string>
+    <string name="editar_perfil">Editar perfil</string>
     <string-array name="categorias_promos">
         <item>Desayunos</item>
         <item>Menú del día</item>

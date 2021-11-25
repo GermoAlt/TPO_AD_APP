@@ -5,6 +5,7 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <uses-feature android:name="android.hardware.camera" android:required="false" />
 
@@ -28,7 +29,7 @@
             android:name=".activities.navigation.ListaVecinosActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.reclamos.nuevo.NuevoReclamoActivity"
+            android:name=".activities.reclamos.NuevoReclamoActivity"
             android:exported="false" />
         <activity
             android:name=".activities.reclamos.MisReclamosActivity"
@@ -73,7 +74,7 @@
             android:name=".activities.login.RegisterActivity"
             android:exported="true" />
         <activity
-            android:name=".activities.login.LoginActivity"
+            android:name=".activities.login.LoginVecinoActivity"
             android:exported="true" />
         <activity
             android:name=".activities.onboarding.OnboardingActivity"

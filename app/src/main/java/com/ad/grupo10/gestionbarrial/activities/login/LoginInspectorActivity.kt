@@ -19,7 +19,7 @@ class LoginInspectorActivity : AppCompatActivity() {
         val botonVecino = findViewById<Button>(R.id.boton_vecino)
         val botonIngresar = findViewById<Button>(R.id.boton_ingresar)
 
-        val intentVecino = Intent(this, LoginActivity::class.java)
+        val intentVecino = Intent(this, LoginVecinoActivity::class.java)
         val intentIngresar = Intent(this, MenuActivity::class.java)
 
         botonVecino.setOnClickListener{

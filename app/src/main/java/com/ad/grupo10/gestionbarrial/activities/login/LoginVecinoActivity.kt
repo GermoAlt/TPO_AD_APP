@@ -17,7 +17,7 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class LoginActivity : AppCompatActivity() {
+class LoginVecinoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_vecino_login)
@@ -58,8 +58,8 @@ class LoginActivity : AppCompatActivity() {
             override fun onResponse(call: Call<Usuario?>, response: Response<Usuario?>) {
                 if(response.isSuccessful){
                     loginSuccess(response)
-                } else {
-                    loginFailure(response)
+//                } else {
+//                    loginFailure(response)
                 }
             }
 
@@ -67,6 +67,8 @@ class LoginActivity : AppCompatActivity() {
                 t.printStackTrace()
             }
         })
+        getSharedPreferences(getString(R.string.file_prefs), Context.MODE_PRIVATE).edit()
+            .putString(getString(R.string.tipo_usuario), TIPO_USUARIO.VECINO.toString()).apply()
         return Usuario(usuario, password)
     }
 
@@ -81,6 +83,13 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun loginFailure(response: Response<Usuario?>){
+        MaterialAlertDialogBuilder(this)
+            .setTitle("Oops!")
+            .setMessage("Las credenciales ingresadas son incorrectas")
+            .setPositiveButton(resources.getString(R.string.aceptar)) { dialog, which ->
+                // Respond to positive button press
+            }
+            .show()
         return
     }
 

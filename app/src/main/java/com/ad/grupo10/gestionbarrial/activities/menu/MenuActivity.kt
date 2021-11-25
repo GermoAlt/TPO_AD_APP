@@ -14,7 +14,7 @@ import com.ad.grupo10.gestionbarrial.activities.promos.MisPromoServActivity
 import com.ad.grupo10.gestionbarrial.activities.promos.NuevaPromoServActivity
 import com.ad.grupo10.gestionbarrial.activities.promos.PromocionesServiciosVecinosActivity
 import com.ad.grupo10.gestionbarrial.activities.reclamos.MisReclamosActivity
-import com.ad.grupo10.gestionbarrial.activities.reclamos.nuevo.NuevoReclamoActivity
+import com.ad.grupo10.gestionbarrial.activities.reclamos.NuevoReclamoActivity
 import com.ad.grupo10.gestionbarrial.activities.reclamos.ReclamosMunicipioActivity
 import com.ad.grupo10.gestionbarrial.enums.TIPO_USUARIO
 
