@@ -12,11 +12,14 @@ import android.net.NetworkCapabilities
 import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.recyclerview.widget.RecyclerView
+import com.ad.grupo10.gestionbarrial.adapters.CategoriasModalAdapter
 import com.ad.grupo10.gestionbarrial.model.Reclamo
 import com.google.android.material.bottomsheet.BottomSheetDialog
 
 
-class NuevoReclamoActivity(var nuevoReclamo: Reclamo) : AppCompatActivity() {
+class NuevoReclamoActivity() : AppCompatActivity() {
+    private lateinit var nuevoReclamo: Reclamo
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,7 +29,7 @@ class NuevoReclamoActivity(var nuevoReclamo: Reclamo) : AppCompatActivity() {
         findViewById<Button>(R.id.boton_enviar).setOnClickListener { enviar() }
         findViewById<Button>(R.id.boton_guardar).setOnClickListener { guardar() }
 
-        findViewById<TextView>(R.id.nueva_promo_categoria).setOnClickListener { generarModalCategorias() }
+        findViewById<TextView>(R.id.nueva_denuncia_categoria).setOnClickListener { generarModalCategorias() }
 
         val botonAtras = findViewById<ImageButton>(R.id.boton_back2)
         botonAtras.setOnClickListener{this.finish()}
@@ -98,9 +101,12 @@ class NuevoReclamoActivity(var nuevoReclamo: Reclamo) : AppCompatActivity() {
     private fun generarModalCategorias(){
         val dialog = BottomSheetDialog(this)
         val view = layoutInflater.inflate(R.layout.bottom_sheet_categorias, null)
+        view.findViewById<RecyclerView>(R.id.RecyclerViewCategoriasModal).adapter =
+            CategoriasModalAdapter(this, listOf("categoria 1", "categoria 2", "categoria 3"))
         view.findViewById<ImageView>(R.id.boton_close_modal_categorias).setOnClickListener { dialog.dismiss() }
-        val text = view.findViewById<TextView>(R.id.texto_categoria)
-        text.setOnClickListener {nuevoReclamo.categoria = text.toString()  }
+//        val text = view.findViewById<TextView>(R.id.texto_categoria)
+//        text.setOnClickListener {nuevoReclamo?.categoria = text.toString()  }
         dialog.setContentView(view)
+        dialog.show()
     }
 }
