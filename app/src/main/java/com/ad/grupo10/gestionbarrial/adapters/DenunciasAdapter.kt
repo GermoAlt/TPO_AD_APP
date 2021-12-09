@@ -10,6 +10,7 @@ import android.view.View
 import com.ad.grupo10.gestionbarrial.R
 import android.widget.ImageView
 import android.widget.TextView
+import com.squareup.picasso.Picasso
 import java.time.format.DateTimeFormatter
 
 class DenunciasAdapter(var context: Context,var denuncias: List<Denuncia>) : RecyclerView.Adapter<DenunciasAdapter.ViewHolder>() {
@@ -37,7 +38,10 @@ class DenunciasAdapter(var context: Context,var denuncias: List<Denuncia>) : Rec
         holder.fechaModificacion.text = denuncias[position].fechaModificacion
             .format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"))
         holder.estado.text = denuncias[position].estado
-//        holder.imagenDenuncia.setImageResource(denuncias[position].imgId)
+//        if(denuncias[position].imgId.isNotBlank())
+//        {
+//            Picasso.with(context).load(MediaManager.get().url().generate(denuncias[position].imgId)).into(imageView)
+//        }
     }
 
     override fun getItemCount(): Int {

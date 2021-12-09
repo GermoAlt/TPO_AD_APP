@@ -9,9 +9,15 @@ import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import android.net.ConnectivityManager
 import android.net.Network
 import android.net.NetworkCapabilities
+import android.widget.ImageButton
+import android.widget.ImageView
+import android.widget.TextView
+import com.ad.grupo10.gestionbarrial.model.Reclamo
+import com.google.android.material.bottomsheet.BottomSheetDialog
 
 
-class NuevoReclamoActivity : AppCompatActivity() {
+class NuevoReclamoActivity(var nuevoReclamo: Reclamo) : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_nuevo_reclamo)
@@ -19,6 +25,11 @@ class NuevoReclamoActivity : AppCompatActivity() {
         findViewById<Button>(R.id.boton_cancelar).setOnClickListener { descartar() }
         findViewById<Button>(R.id.boton_enviar).setOnClickListener { enviar() }
         findViewById<Button>(R.id.boton_guardar).setOnClickListener { guardar() }
+
+        findViewById<TextView>(R.id.nueva_promo_categoria).setOnClickListener { generarModalCategorias() }
+
+        val botonAtras = findViewById<ImageButton>(R.id.boton_back2)
+        botonAtras.setOnClickListener{this.finish()}
     }
 
     private fun descartar(){
@@ -82,5 +93,14 @@ class NuevoReclamoActivity : AppCompatActivity() {
         val network: Network = connMgr.activeNetwork ?: return false
         val capabilities = connMgr.getNetworkCapabilities(network)
         return capabilities != null && capabilities.hasTransport(NetworkCapabilities.TRANSPORT_WIFI)
+    }
+
+    private fun generarModalCategorias(){
+        val dialog = BottomSheetDialog(this)
+        val view = layoutInflater.inflate(R.layout.bottom_sheet_categorias, null)
+        view.findViewById<ImageView>(R.id.boton_close_modal_categorias).setOnClickListener { dialog.dismiss() }
+        val text = view.findViewById<TextView>(R.id.texto_categoria)
+        text.setOnClickListener {nuevoReclamo.categoria = text.toString()  }
+        dialog.setContentView(view)
     }
 }

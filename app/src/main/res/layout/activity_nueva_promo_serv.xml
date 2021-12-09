@@ -6,154 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".activities.promos.NuevaPromoServActivity">
 
-    <View
-        android:id="@+id/splitLine_hor9"
-        android:layout_width="411dp"
-        android:layout_height="1dp"
-        android:layout_marginBottom="15dp"
-        android:background="@android:color/darker_gray"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName9"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <View
-        android:id="@+id/splitLine_hor10"
-        android:layout_width="411dp"
-        android:layout_height="1dp"
-        android:layout_marginBottom="20dp"
-        android:background="@android:color/darker_gray"
-        app:layout_constraintBottom_toTopOf="@+id/nueva_denuncia_categoria2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <View
-        android:id="@+id/splitLine_hor11"
-        android:layout_width="411dp"
-        android:layout_height="1dp"
-        android:layout_marginBottom="17dp"
-        android:background="@android:color/darker_gray"
-        app:layout_constraintBottom_toTopOf="@+id/imageView16"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <View
-        android:id="@+id/splitLine_hor12"
-        android:layout_width="411dp"
-        android:layout_height="1dp"
-        android:layout_marginBottom="10dp"
-        android:background="@android:color/darker_gray"
-        app:layout_constraintBottom_toTopOf="@+id/imageView17"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <View
-        android:id="@+id/splitLine_hor13"
-        android:layout_width="411dp"
-        android:layout_height="1dp"
-        android:layout_marginBottom="18dp"
-        android:background="@android:color/darker_gray"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName8"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView14"
-        android:layout_width="38dp"
-        android:layout_height="37dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginBottom="12dp"
-        app:layout_constraintBottom_toTopOf="@+id/splitLine_hor10"
-        app:layout_constraintEnd_toStartOf="@+id/nueva_denuncia_ubicacion2"
-        app:layout_constraintHorizontal_bias="0.904"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/icon_ubicacion" />
-
-    <ImageView
-        android:id="@+id/imageView15"
-        android:layout_width="37dp"
-        android:layout_height="37dp"
-        android:layout_marginEnd="6dp"
-        android:layout_marginBottom="9dp"
-        app:layout_constraintBottom_toTopOf="@+id/splitLine_hor13"
-        app:layout_constraintEnd_toStartOf="@+id/nueva_denuncia_categoria2"
-        app:srcCompat="@drawable/icon_categoria" />
-
-    <ImageView
-        android:id="@+id/imageView16"
-        android:layout_width="43dp"
-        android:layout_height="39dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="6dp"
-        app:layout_constraintBottom_toTopOf="@+id/splitLine_hor12"
-        app:layout_constraintEnd_toStartOf="@+id/nueva_denuncia_agregar_fotos2"
-        app:srcCompat="@drawable/icon_add_photo" />
-
-    <ImageView
-        android:id="@+id/imageView17"
-        android:layout_width="39dp"
-        android:layout_height="40dp"
-        android:layout_marginBottom="155dp"
-        app:layout_constraintBottom_toTopOf="@+id/navigation"
-        app:srcCompat="@drawable/icon_descripcion"
-        tools:layout_editor_absoluteX="34dp" />
-
-    <TextView
-        android:id="@+id/nueva_denuncia_agregar_fotos2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="74dp"
-        android:layout_marginBottom="17dp"
-        android:text="Añadir fotos, videos o notas de voz"
-        app:layout_constraintBottom_toTopOf="@+id/splitLine_hor12"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <TextView
-        android:id="@+id/nueva_denuncia_categoria2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="171dp"
-        android:layout_marginBottom="16dp"
-        android:text="Seleccionar categoría"
-        app:layout_constraintBottom_toTopOf="@+id/splitLine_hor13"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <TextView
-        android:id="@+id/nueva_denuncia_ubicacion2"
-        android:layout_width="wrap_content"
-        android:layout_height="22dp"
-        android:layout_marginEnd="176dp"
-        android:layout_marginBottom="20dp"
-        android:text="Establecer ubicación"
-        app:layout_constraintBottom_toTopOf="@+id/splitLine_hor10"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/boton_back7"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="146dp"
-        android:layout_marginEnd="48dp"
-        android:layout_marginBottom="24dp"
-        android:text="ENVIAR"
-        app:layout_constraintBottom_toTopOf="@+id/navigation"
-        app:layout_constraintEnd_toStartOf="@+id/boton_cancelar2"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/boton_cancelar2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="24dp"
-        android:text="CANCELAR"
-        app:layout_constraintBottom_toTopOf="@+id/navigation"
-        app:layout_constraintEnd_toEndOf="parent" />
-
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/navigation"
         android:layout_width="match_parent"
@@ -168,100 +20,296 @@
         android:id="@+id/boton_back7"
         android:layout_width="48dp"
         android:layout_height="48dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="14dp"
         android:background="@null"
         android:contentDescription="@string/back_button"
-        app:layout_constraintBottom_toTopOf="@+id/imageView14"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.082"
+        app:layout_constraintEnd_toStartOf="@+id/textView16"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.591"
         app:srcCompat="?attr/actionModeCloseDrawable" />
 
     <TextView
         android:id="@+id/textView16"
         android:layout_width="wrap_content"
         android:layout_height="37dp"
-        android:layout_marginStart="9dp"
+        android:layout_marginTop="45dp"
         android:layout_marginEnd="147dp"
-        android:layout_marginBottom="8dp"
         android:text="@string/nuevo_servicio"
         android:textColor="#000000"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/nueva_denuncia_ubicacion2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/boton_back7"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.552" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginEnd="133dp"
-        android:layout_marginBottom="17dp"
-        android:ems="10"
-        android:hint="Teléfono"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/splitLine_hor9"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="78dp"
-        android:layout_marginEnd="135dp"
-        android:layout_marginBottom="16dp"
-        android:ems="10"
-        android:hint="Fecha"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/splitLine_hor11"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView19"
-        android:layout_width="48dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="13dp"
-        app:layout_constraintBottom_toTopOf="@+id/splitLine_hor9"
-        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName8"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/icon_telefono" />
+        app:layout_constraintTop_toBottomOf="@+id/boton_back7">
 
-    <ImageView
-        android:id="@+id/imageView20"
-        android:layout_width="39dp"
-        android:layout_height="41dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginEnd="11dp"
-        android:layout_marginBottom="13dp"
-        app:layout_constraintBottom_toTopOf="@+id/splitLine_hor11"
-        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName9"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/icon_reloj" />
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="33dp"
+            app:layout_constraintBottom_toTopOf="@+id/splitLine_hor10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icon_ubicacion" />
 
-    <EditText
-        android:id="@+id/editTextTextMultiLine"
-        android:layout_width="261dp"
-        android:layout_height="78dp"
-        android:layout_marginStart="7dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="70dp"
-        android:layout_marginBottom="45dp"
-        android:ems="10"
-        android:gravity="start|top"
-        android:hint="Ingrese una descripción del servicio"
-        android:inputType="textMultiLine"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        <TextView
+            android:id="@+id/nueva_denuncia_ubicacion2"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_marginStart="35dp"
+            android:text="Establecer ubicación"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView14"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/splitLine_hor10"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView17"
-        app:layout_constraintTop_toBottomOf="@+id/splitLine_hor12" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout6">
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="34dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="33dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icon_categoria" />
+
+        <TextView
+            android:id="@+id/nueva_promo_categoria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:text="Seleccionar categoría"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView15"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/splitLine_hor13"
+            android:layout_width="411dp"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout8"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout7">
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="33dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icon_telefono" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:hint="Teléfono"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView19"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/splitLine_hor9"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout9"
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout8">
+
+        <ImageView
+            android:id="@+id/imageView20"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="33dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icon_reloj" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:hint="Fecha"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView20"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/splitLine_hor11"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout10"
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout9">
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="34dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="33dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icon_add_photo" />
+
+        <TextView
+            android:id="@+id/nueva_denuncia_agregar_fotos2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:text="Añadir fotos, videos o notas de voz"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView16"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/splitLine_hor12"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:layout_marginBottom="31dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout10"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="33dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icon_descripcion" />
+
+        <EditText
+            android:id="@+id/editTextTextMultiLine"
+            android:layout_width="261dp"
+            android:layout_height="78dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Ingrese una descripción del servicio"
+            android:inputType="textMultiLine"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView17"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout11"
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="25dp"
+            android:text="ENVIAR"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/boton_cancelar2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/boton_cancelar2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="28dp"
+            android:text="CANCELAR"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
