@@ -39,6 +39,7 @@
     <string name="buscar">Buscar</string>
     <string name="icon">Icon</string>
     <string name="titulo_denuncia_card">Denuncia #%1$s</string>
+    <string name="titulo_notificacion_card">%1$s #%2$s</string>
     <string name="inicio">Inicio</string>
     <string name="vecinos">Vecinos</string>
     <string name="notificaciones">Notificaciones</string>
